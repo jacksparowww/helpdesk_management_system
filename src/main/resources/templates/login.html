@@ -1,0 +1,90 @@
+
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HelpDesk | Login</title>
+
+    <link rel="stylesheet" th:href="@{/css/style.css}">
+    <script th:src="@{/js/login.js}" defer></script>
+</head>
+<body>
+
+<div class="page-container">
+
+    <section class="welcome-panel">
+        <div class="brand">
+            <div class="brand-icon">H</div>
+            <span>HelpDesk</span>
+        </div>
+
+        <div class="welcome-content">
+            <p class="eyebrow">CUSTOMER SUPPORT PORTAL</p>
+            <h1>How can we help you today?</h1>
+            <p>
+                Manage support requests, track ticket progress,
+                and communicate with your support team in one place.
+            </p>
+        </div>
+
+        <div class="welcome-footer">
+            Simple support. Clear solutions.
+        </div>
+    </section>
+
+    <main class="login-panel">
+        <div class="login-card">
+
+            <div class="mobile-brand">HelpDesk</div>
+
+            <p class="eyebrow">WELCOME BACK</p>
+            <h2>Sign in to your account</h2>
+            <p class="subtitle">
+                Enter your details to access your dashboard.
+            </p>
+
+            <form id="loginForm">
+
+                <div class="form-group">
+                    <label for="email">Email address</label>
+                    <input
+                            type="email"
+                            id="email"
+                            name="email"
+                            placeholder="you@example.com"
+                            autocomplete="email"
+                            required>
+                </div>
+
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input
+                            type="password"
+                            id="password"
+                            name="password"
+                            placeholder="Enter your password"
+                            autocomplete="current-password"
+                            required>
+                </div>
+
+                <div id="message" class="message"
+                     role="status" aria-live="polite"></div>
+
+                <button type="submit" id="loginButton">
+                    Sign In
+                </button>
+
+            </form>
+
+            <p class="security-note">
+                Secure access to your support workspace.
+            </p>
+
+        </div>
+    </main>
+
+</div>
+
+</body>
+</html>
